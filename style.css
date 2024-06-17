@@ -1,0 +1,143 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f4f8;
+    margin: 0%;
+
+}
+
+.card{
+    display: flex;
+    max-width: 730px;
+    background-color: white;
+    border-radius: 13px;
+    box-shadow: 0 5px 8px; 
+     overflow: hidden; 
+} 
+
+.card img{
+    width: 50%;
+     object-fit: cover;
+}  
+
+.content{
+padding: 25px;
+position: relative;
+width: 50%;
+}
+
+.content h2{
+    margin: 0;
+    color: rgb(76, 76, 84);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.content p{
+    font-size: 0.9rem;
+    color: #6b7280;
+}
+
+ .profile{
+     display: flex; 
+    align-items: center;
+    margin-top: 20px; 
+} 
+
+.profile img {
+    border-radius: 55%;
+     width: 60px;
+     height: 60px;
+    margin-right: 12px; 
+}
+
+.profile-info{
+    font-size: 0.8rem;
+}
+
+ .profile-info p {
+  margin: 0;
+} 
+
+.profile-info p.name{
+    font-weight: bold;
+ 
+}
+
+.share-button img {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+     /* background-color: rgb(89, 89, 180); */
+    width: 40px;
+    height: 40px;
+    
+    
+}
+
+.share-icon{
+ color: rgb(254, 254, 254);
+ border-color: #f0f4f8;
+   
+   
+}
+
+
+.share-popup{
+   display: none; 
+   position: absolute;
+   bottom: 60px;
+right: 0;
+background-color: #4b5563;
+color: white;
+border-radius: 6px;
+padding: 10px;
+display: flex;
+ justify-content: space-between;
+align-items: center; 
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.share-popup::after{
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translate(-50%);
+    border-width: px;
+    border-style: solid;
+    border-color: #4b5563 transparent transparent transparent;
+}
+
+.share-popup span {
+   margin-right: 10px; 
+   margin-left: 10px;
+   display: flex;
+   padding: 1px 2px 3px ;
+  
+}
+
+.span{
+
+color: rgb(208, 201, 201);
+}
+.share-popup img {
+   margin-right: 12px;
+   width: 15px;
+   height: 15px ;
+border-radius: 1px;
+}
+
+.share-button.active .share-popup {
+    display: flex;
+}
+
+.attribution{
+    padding: 10px;
+    margin: 10px;
+}
+
